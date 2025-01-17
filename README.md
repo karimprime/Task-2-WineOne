@@ -76,9 +76,9 @@ Task-2-WineOne/
 │   ├── app/
 │   │   ├── components/   # Angular components
 │   │   ├── services/     # Angular services
-│   │   ├── app.module.ts # Main module
+│   │   ├── app.models.ts # Main module
 │   │   └── app.component.ts
-│   └── assets/           # Static assets
+│   └── Public/images     # Static assets
 ├── angular.json          # Angular CLI configuration
 ├── package.json          # Dependencies and scripts
 └── README.md             # Project documentation
