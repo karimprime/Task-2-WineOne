@@ -3,5 +3,11 @@
     @for (breakfastItem of breakfastItems; track $index) {
     <app-card-breakfast [breakfastItem]="breakfastItem"></app-card-breakfast>
     }
+    @empty {
+    <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+      <p class="pt-2 fs-6">Seafood Empty Please Check Again Later!!</p>
+      <button class="btnback" routerLink="/home">Return to Home Page</button>
+    </div>
+    }
   </div>
 </div>
