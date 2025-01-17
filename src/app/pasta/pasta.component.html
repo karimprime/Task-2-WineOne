@@ -3,5 +3,11 @@
     @for (pastaItem of pastaItems; track $index) {
     <app-card-pasta [pastaItem]="pastaItem"></app-card-pasta>
     }
+    @empty {
+    <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+      <p class="pt-2 fs-6">Pasta Empty Please Check Again Later!!</p>
+      <button class="btnback" routerLink="/home">Return to Home Page</button>
+    </div>
+    }
   </div>
 </div>
