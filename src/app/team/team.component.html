@@ -1,0 +1,55 @@
+<div class="card text-center">
+  <div class="card-header">
+    Hello from Team Component
+  </div>
+
+  <div class="container p-5">
+    <h2 class="fs-5">
+      Hi I'm the Team Parent Component <i class="bi bi-hand-thumbs-up-fill text-primary"></i> and I Have A Child Called
+      Supervisor
+      5aaafoooo Minooooooooo <i class="bi bi-robot"></i>
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ullam, tempore explicabo praesentium repellat
+      commodi
+      cumque nihil est modi ipsam itaque doloremque, assumenda dolorum veniam sequi illo corporis excepturi soluta
+      eligendi molestias, et quae dolore odit doloribus? Corrupti inventore beatae odio sint reiciendis iusto debitis
+      repellendus magni illo officiis error dicta dignissimos laboriosam, tenetur ab impedit, consectetur voluptatum
+      omnis
+      quibusdam rem deserunt. Totam expedita incidunt quis iste, consequuntur ratione atque blanditiis, eum in veritatis
+      non eligendi? Nulla asperiores, esse tempore aliquam libero sequi, quibusdam distinctio voluptates, modi dolores
+      vel a? Cumque rem vel libero natus distinctio fugiat consectetur aperiam voluptatem placeat
+    </p>
+
+    <!-- Section to hide when data is sent -->
+    @if (!dataSentDone) {
+    <div>
+      <img src="/images/23.jpg" alt="Laptop" class="img-fluid mb-3">
+      <p class="p-2 text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ullam, tempore explicabo praesentium repellat
+        commodi
+        cumque nihil est modi ipsam itaque doloremque, assumenda dolorum veniam sequi illo corporis excepturi soluta
+        eligendi molestias, et quae dolore odit doloribus? Corrupti inventore beatae odio sint reiciendis iusto debitis
+        repellendus magni illo officiis error dicta dignissimos laboriosam, tenetur ab impedit, consectetur voluptatum
+        omnis
+        quibusdam rem deserunt. Totam expedita incidunt quis iste, consequuntur ratione atque blanditiis, eum in
+        veritatis
+        non eligendi? Nulla asperiores, esse tempore aliquam libero sequi, quibusdam distinctio voluptates, modi dolores
+        vel a? Cumque rem vel libero natus distinctio fugiat consectetur aperiam voluptatem placeat
+      </p>
+    </div>
+    }
+
+    @if (dataSentDone) {
+    <div class="alert alert-success messageDone">
+      <i class="bi bi-check-circle-fill"></i> Data has been sent successfully!
+    </div>
+    }
+
+    <app-data-send (sendData)="dataSent()"></app-data-send>
+  </div>
+
+  <div class="card-footer text-body-secondary">
+    2 days ago
+  </div>
+</div>

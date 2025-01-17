@@ -1,0 +1,10 @@
+<nav class="navbar navbar-expand bg-dark navbar-dark m-auto mt-3 rounded-5 p-2">
+  <ul class="navbar-nav m-auto p-2">
+
+    @for (link of links; track $index) {
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="link.srcLink" routerLinkActive="active">{{link.titleLink}}</a>
+      </li>
+      }
+  </ul>
+</nav>

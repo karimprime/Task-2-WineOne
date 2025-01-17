@@ -1,0 +1,17 @@
+.navbar {
+  width: 50%;
+}
+
+.active {
+  background-color: #0DCAF0;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+}

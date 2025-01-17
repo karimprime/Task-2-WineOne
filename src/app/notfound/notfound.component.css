@@ -1,0 +1,19 @@
+section {
+  width: 100%;
+  padding: 9.5rem;
+}
+
+
+
+.btnback:hover {
+  background-color: #07b1d3;
+}
+
+.btnback {
+  background-color: #0DCAF0;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  transition: 0.5s;
+}

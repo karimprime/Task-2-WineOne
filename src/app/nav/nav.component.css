@@ -1,0 +1,13 @@
+.active {
+  background-color: #0DCAF0;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+img {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+}
